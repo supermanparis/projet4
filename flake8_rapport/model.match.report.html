@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: model/match.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="model.match.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               model/match.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  13
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="model.match.source.html#l20">
+                  <tt><i>20</i> <span class="c1"># Lorsqu&#39;un tour est terminé, le gestionnaire du </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l21">
+                  <tt><i>21</i> <span class="c1"># tournoi saisit les résultats de chaque match avant de générer les paires suivantes. </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l25">
+                  <tt><i>25</i> <span class="c1"># deux éléments : une référence à une instance de joueur et un score. Les matchs multiples doivent être </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l26">
+                  <tt><i>26</i> <span class="c1"># stockés sous forme de liste sur l&#39;instance du tour. </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l35">
+                  <tt><i>35</i> <span class="sd">Chaque tour est une liste de matchs. Chaque match consiste en une paire de joueurs avec </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l36">
+                  <tt><i>36</i> <span class="sd">un champ de résultats pour chaque joueur. Lorsqu&#39;un tour est terminé, le gestionnaire du </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l37">
+                  <tt><i>37</i> <span class="sd">tournoi saisit les résultats de chaque match avant de générer les paires suivantes. </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l42">
+                  <tt><i>42</i> <span class="sd">deux éléments : une référence à une instance de joueur et un score. Les matchs multiples doivent être </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l43">
+                  <tt><i>43</i> <span class="sd">stockés sous forme de liste sur l&#39;instance du tour. </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l45">
+                  <tt><i>45</i> <span class="sd">En plus de la liste des correspondances, chaque instance du tour doit contenir un champ de nom. </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l46">
+                  <tt><i>46</i> <span class="sd">Actuellement, nous appelons nos tours &quot;Round 1&quot;, &quot;Round 2&quot;, etc. Elle doit également contenir </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l47">
+                  <tt><i>47</i> <span class="sd">un champ Date et heure de début et un champ Date et heure de fin, qui doivent tous deux être automatiquement </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l48">
+                  <tt><i>48</i> <span class="sd">remplis lorsque l&#39;utilisateur crée un tour et le marque comme terminé. Les instances de round doivent </span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W293">
+               <span class="count sev-2">
+                  7
+               </span>
+               <strong>W293:</strong> blank line contains whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="model.match.source.html#l7">
+                  <tt><i>7</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l12">
+                  <tt><i>12</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l15">
+                  <tt><i>15</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l29">
+                  <tt><i>29</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l30">
+                  <tt><i>30</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l31">
+                  <tt><i>31</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="model.match.source.html#l34">
+                  <tt><i>34</i> <span class="sd">        </span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E231">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E231:</strong> missing whitespace after ','
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="model.match.source.html#l14">
+                  <tt><i>14</i>         <span class="k">return</span> <span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">player_1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">player_1_score</span><span class="p">],[</span><span class="bp">self</span><span class="o">.</span><span class="n">player_2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">player_2_score</span><span class="p">])</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E303">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E303:</strong> too many blank lines (5)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="model.match.source.html#l32">
+                  <tt><i>32</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E501:</strong> line too long (1171 > 119 characters)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="model.match.source.html#l51">
+                  <tt><i>51</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W292">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W292:</strong> no newline at end of file
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="model.match.source.html#l51">
+                  <tt><i>51</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
